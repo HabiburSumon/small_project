@@ -5,6 +5,8 @@ import 'dart:async'; // Import for Timer
 import 'package:small_project/home/JobStart.dart';
 
 class VerifyCustomer extends StatefulWidget {
+  const VerifyCustomer({super.key});
+
   @override
   _VerifyCustomerState createState() => _VerifyCustomerState();
 }
@@ -21,7 +23,6 @@ class _VerifyCustomerState extends State<VerifyCustomer> {
   final String senderId = "8809617611744"; // Your sender ID
   int _countdown = 120; // 2 minutes in seconds
   Timer? _timer;
-
   Future<void> sendOTP() async {
     if (mobileNumber.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
