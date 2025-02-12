@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:small_project/home/home_screen.dart';
+import 'package:small_project/home/DiagnosisForm.dart';
 
 void main() {
   runApp(MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -12,8 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Home Page',
-      home: VerifyCustomer(),
+   home: DiagnosisForm(),
     );
   }
 }
